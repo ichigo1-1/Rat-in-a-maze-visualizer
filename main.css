@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(-45deg, #b63838, #f8b400, #3f7841, #3f51b5);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#controls input,
+#controls button {
+    margin: 5px;
+}
+
+#canvas-div {
+    padding: 10px;
+}
+
+canvas {
+    border: 3px solid black;
+}
+
+p {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 10px;
+    border-radius: 10px;
+}
